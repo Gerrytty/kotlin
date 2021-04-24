@@ -1,7 +1,12 @@
 .idea
+.cache
 
 *.bin
 *.lock
 *.class
 
-*/build/*
+**/build/
+
+*.iml
+*.log
+*.lck
