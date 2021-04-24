@@ -13,6 +13,7 @@ fun main() {
     println(joinToString<Int>(listOf(1, 2, 3, 4, 5), "(", ")", ";"))
 }
 
+@JvmOverloads // create methods for java
 fun <T> joinToString(collection: Collection<T>,
                      prefix: String,
                      postfix: String, separator: String) : String {
