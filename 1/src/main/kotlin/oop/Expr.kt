@@ -3,7 +3,7 @@ package oop
 /***
  * sealed class - разрешает наследоваться от него
  * только во внутренних классах
- */
+ ***/
 sealed class Expr {
 
     fun func() {
@@ -25,7 +25,7 @@ fun eval(e: Expr) : Int {
 /***
  * По умолчанию все классы final (от них нельзя наследоваться)
  * Чтобы разрешить наследование нужно указать модификатор open
- */
+ ***/
 open class Test(private val testName: String) {
     // с функиями тоже самое
     open fun makeTest() {
