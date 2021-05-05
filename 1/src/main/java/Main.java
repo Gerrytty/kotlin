@@ -12,8 +12,18 @@ public class Main {
 
         map.forEach((letter, b) -> System.out.println(letter + " is " + b));
 
-        for (Character key : map.keySet()) {
-            System.out.print(key + " ");
-        }
+//        for (Character key : map.keySet()) {
+//            System.out.print(key + " ");
+//        }
+
+        User u = new User();
+        u.name = "name";
+
+        f(u);
+        System.out.println(u.name);
+    }
+
+    public static void f(User u) {
+        u.name = "new name";
     }
 }
