@@ -43,7 +43,7 @@ fun main() {
     // println(mix(Color.RED, Color.INDIGO))
 }
 
-fun add(x:Int, y:Int) : Int {
+fun add(x: Int, y: Int): Int {
     val sum = x + y
     println("$x + $y = $sum")
     return sum
@@ -53,8 +53,8 @@ fun printHumanName(human: Human) {
     println(human.name)
 }
 
-fun getRussianColor(color: Color) : String =
-    when(color) {
+fun getRussianColor(color: Color): String =
+    when (color) {
         Color.GREEN -> "зеленый"
         Color.RED -> "красный"
         Color.YELLOW -> "желтый"
@@ -65,7 +65,7 @@ fun getRussianColor(color: Color) : String =
     }
 
 fun mix(c1: Color, c2: Color) =
-    when(setOf(c1, c2)) {
+    when (setOf(c1, c2)) {
         setOf(Color.RED, Color.YELLOW) -> Color.ORANGE
         setOf(Color.YELLOW, Color.BLUE) -> Color.YELLOW
         setOf(Color.BLUE, Color.VIOLET) -> Color.INDIGO

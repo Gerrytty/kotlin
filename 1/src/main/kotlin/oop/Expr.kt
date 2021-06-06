@@ -15,8 +15,8 @@ sealed class Expr {
 
 }
 
-fun eval(e: Expr) : Int {
-    return when(e) {
+fun eval(e: Expr): Int {
+    return when (e) {
         is Expr.Num -> e.num
         is Expr.Sum -> eval(e.right) + eval(e.left)
     }
@@ -33,7 +33,7 @@ open class Test(private val testName: String) {
     }
 }
 
-class MyTest: Test("my test") {
+class MyTest : Test("my test") {
     /***
      * Когда переопределяем метод из суперкласса нужно обеязательно
      * указать модификатор override

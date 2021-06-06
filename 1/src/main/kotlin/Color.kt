@@ -6,7 +6,7 @@ enum class Color(val r: Int, val g: Int, val b: Int) {
     GREEN(0, 255, 0),
     BLUE(0, 0, 255), INDIGO(75, 0, 130), VIOLET(238, 130, 238);
 
-    fun rgb() : Int {
+    fun rgb(): Int {
         return (r * 256 + g) * 256 + b;
     }
 

@@ -47,7 +47,7 @@ fun main() {
     println(User("gerrytty"))
 
     Singleton.printInfo()
-    
+
     val myClass = MyClass()
 
     myClass.myField = "some field"

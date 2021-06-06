@@ -14,9 +14,11 @@ fun main() {
 }
 
 @JvmOverloads // create methods for java
-fun <T> joinToString(collection: Collection<T>,
-                     prefix: String,
-                     postfix: String, separator: String) : String {
+fun <T> joinToString(
+    collection: Collection<T>,
+    prefix: String,
+    postfix: String, separator: String
+): String {
 
     val stringBuilder = StringBuilder(prefix)
 

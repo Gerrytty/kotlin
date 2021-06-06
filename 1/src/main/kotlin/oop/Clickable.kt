@@ -5,7 +5,7 @@ interface Clickable {
     fun click()
 
     // метод по умолчанию
-    fun getInterfaceName() : String {
+    fun getInterfaceName(): String {
         return "Clickable"
     }
 

@@ -11,19 +11,17 @@ fun main() {
     println(readNumber(BufferedReader(StringReader("123"))))
 }
 
-fun isPercentage(number: Int) : Int {
+fun isPercentage(number: Int): Int {
     return if (number in 1..100) number else throw IllegalArgumentException()
 }
 
-fun readNumber(reader: BufferedReader) : Int? {
+fun readNumber(reader: BufferedReader): Int? {
     return try {
         Integer.parseInt(reader.readLine())
-    }
-    catch (e: NumberFormatException) {
+    } catch (e: NumberFormatException) {
         println("Not a number")
         null
-    }
-    finally {
+    } finally {
         reader.close()
     }
 }
